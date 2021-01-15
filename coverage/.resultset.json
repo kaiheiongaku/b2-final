@@ -1,8 +1,10 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/kaiheiongaku/turing/mod2/final/b2-final/app/models/hospital.rb": {
+      "/Users/kaiheiongaku/turing/mod2/final/b2-final/app/models/doctor.rb": {
         "lines": [
+          1,
+          1,
           1,
           1,
           1,
@@ -16,13 +18,77 @@
           null
         ]
       },
-      "/Users/kaiheiongaku/turing/mod2/final/b2-final/app/models/doctor.rb": {
+      "/Users/kaiheiongaku/turing/mod2/final/b2-final/spec/models/doctor_surgery_spec.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kaiheiongaku/turing/mod2/final/b2-final/app/models/doctor_surgery.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/kaiheiongaku/turing/mod2/final/b2-final/spec/models/hospital_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kaiheiongaku/turing/mod2/final/b2-final/app/models/hospital.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/kaiheiongaku/turing/mod2/final/b2-final/spec/models/surgery_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kaiheiongaku/turing/mod2/final/b2-final/app/models/surgery.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
           1,
           null
         ]
       }
     },
-    "timestamp": 1610728509
+    "timestamp": 1610728992
   }
 }
