@@ -36,5 +36,21 @@ RSpec.describe 'surgery show page' do
         expect(page).to have_content(@cataracts.title)
       end
     end
+
+    it 'has a field that can add a doctor to a surgery' do
+      visit "/surgeries/#{@appendectomy.id}"
+
+      expect(page).to have_content("Add a Doctor")
+      expect(page).to have_field("name")
+    end
+
+    it 'can add a doctor to the surgery' do
+      visit "/surgeries/#{@appendectomy.id}"
+      fill_in "name", with: "Robert Heath"
+      click_on "Submit"
+
+      expect(current_path).to eq("/surgeries/#{@appendectomy.id}")
+      expect(page).to have_content("Robert Heath")
+    end
   end
 end

@@ -7,3 +7,12 @@
     <%= surgery.title %>
   <% end %>
 </section>
+<h3>Newly added doctors:<%= @last_doctor %></h3> 
+
+<%= form_tag "/surgeries/#{@surgery.id}" do %>
+<h1>Add a Doctor</h1>
+<%= label_tag :name %>
+<%= text_field_tag :name %>
+<% hidden_field_tag :surgery_id, @surgery.id %>
+<%= submit_tag 'Submit' %>
+<% end %>
