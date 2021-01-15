@@ -33,7 +33,7 @@ RSpec.describe 'surgery show page' do
 
       within "#weekday" do
         expect(page).to have_content("Other surgeries happening this day of the week:")
-        expect(page).to have_content(@cataracts.name)
+        expect(page).to have_content(@cataracts.title)
       end
     end
   end
