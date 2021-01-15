@@ -21,7 +21,7 @@ RSpec.describe 'surgery index page' do
   end
 
   describe 'when I visit the index page' do
-    it 'shows the titles of all surgeries' do
+    it 'shows the titles and doctors of all surgeries' do
       visit '/surgeries'
 
       expect(current_path).to eq("/surgeries")
@@ -48,8 +48,18 @@ RSpec.describe 'surgery index page' do
       end
     end
 
-    it 'shows all the doctors performing those surgeries' do
+    it 'will allow me to click a link to a surgery show page' do
+      visit '/surgeries'
 
+      click_link "#{@cataracts.title}"
+    end
+
+    it 'will take me to the surgery show page' do
+      visit '/surgeries'
+
+      click_link "#{@cataracts.title}"
+
+      expect(current_path).to eq("/surgeries/#{@cataracts.id}")
     end
   end
 
