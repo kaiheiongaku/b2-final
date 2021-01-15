@@ -1,0 +1,9 @@
+<h1>Surgeries Available</h1>
+<% @surgeries.each do |surgery| %>
+  <section id="surgery-<%= surgery.id %>">
+    <h3><%= surgery.title %></h3>
+        <%= surgery.doctors.each do |doctor| %>
+          <h4><%= doctor.name %></h4>
+        <% end %>
+  </section>
+<% end %>

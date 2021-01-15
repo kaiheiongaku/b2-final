@@ -43,8 +43,24 @@
           1,
           null
         ]
+      },
+      "/Users/kaiheiongaku/turing/mod2/final/b2-final/app/controllers/surgeries_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/kaiheiongaku/turing/mod2/final/b2-final/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1610730674
+    "timestamp": 1610731426
   }
 }
